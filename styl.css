@@ -1,0 +1,93 @@
+body{
+  color: white;
+  overflow-x: hidden;
+}
+.bg{
+  background-image: url('bulb.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar{
+    background-color: rgb(219, 129, 129);
+    background-color: rgb(0,0,0);
+    color: white
+}
+.navbar-nav{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffbc7f;
+    width: 70%;
+    /* margin-right: 10rem; */
+}
+.button{
+    margin-right: 12rem;
+    display: flex;
+}
+#carouselExampleIndicators{
+    height: 85vh;
+    width: 100%;
+    /* margin-left: 10%; */
+    margin-right: 10%;
+    /* margin-top: 2rem; */
+    /* border: 0.5rem solid rgb(0, 0, 0); */
+    border-radius: 1rem;
+    /* padding: 2rem; */
+    overflow: hidden;
+}
+#img2{
+    border-radius: 0.2rem;
+}
+#About{
+    margin: auto;
+    /* margin-left: 7%;
+    margin-right: 7%; */
+    width: 100%;
+    
+    background-color: transparent;
+    border: 0.2rem solid rgb(33, 7, 57);
+}
+#Abt{
+  background-color: rgb(70, 157, 59);
+  
+}
+
+#chart_div{
+  position: relative;
+  border: 0.2rem solid rgb(210, 202, 217);
+  width: 100%;
+}
+
+
+#Cont{
+  background-color: transparent;
+  width: 100%;
+  
+}
+
+#box2{
+  margin-top: 4rem;
+  display: flex;
+    margin-left: 0%;
+    margin-right: 0%;
+  border: 0.1rem solid red;
+}
+
+h4{
+  color: transparent;
+  font-size: 10rem;
+   background-image: url("blackk.jpg");
+   background-size: 10%;
+   background-position: 50% 50%;
+   -webkit-background-clip: text;
+   animation: zoomout 10s ease 0.5s forwards;
+}
+@keyframes zoomout{
+   from {
+       background-size: 40%;
+       }
+   to{
+       background-size: 100%;
+   }
+}
+
