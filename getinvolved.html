@@ -21,20 +21,14 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
       body { 
         font-family: 'Dancing Script', cursive;
-        background-image: url('banner.webp');
-        background-size: 100% 140%;
-        background-repeat: no-repeat;
+        background-image: url('bg1.jpg');
        
-  /* background-attachment: fixed; */
       }
-      /* .wrapper {
-        height: 100vh;
-        overflow-y: auto;
-        overflow-x: hidden;
-        perspective: 10px;
-      } */
+      
       h4{
         text-align: center;
        color: transparent;
@@ -83,6 +77,31 @@
            background-position: 600px
        }
     }
+    #cor{
+      font-family: 'Tapestry', cursive;
+    }
+    .navbar{
+ 
+ background-color: rgb(219, 129, 129);
+ background-color: rgb(0,0,0);
+ 
+}
+.navbar-nav{
+ border: 2px solid;
+ display: flex;
+ justify-content: centre;
+ /* background-color: #ffbc7f; */
+ width: 70%;
+ /* margin-right: 10rem; */
+ 
+}
+.button{
+ margin-right: 12rem;
+ display: flex;
+}
+#cas{
+  font-family: 'Orelega One', cursive;
+}
     
     </style>
     <script
@@ -92,8 +111,8 @@
     ></script>
     
     
-    <!-- <div class="has-bg-img bg-purple bg-blend-multiply"> -->
-    <div class="my-1 mx-5 p-3 border border-5 border-success shadow-lg col-fluid overflow-hidden">
+  <!-- COROUSEL HERE -->
+    <div class="my-1 mx-5 p-3 border border-5 border-success shadow-lg col-fluid overflow-hidden" id="cor">
       <div id="carouselExampleControls" class="carousel slide container-sm" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -103,7 +122,7 @@
               <div class="card-img-overlay">
                 <h1 class="card-title color-primary">TOGERTHER WE AN DO IT</h1>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text">Last updated 3 mins ago</p>
+                <p class="card-text">-ISIS NGO, GYWS, IIT KGP</p>
               </div>
             </div>
           </div>
@@ -113,7 +132,7 @@
               <div class="card-img-overlay">
                 <h1 class="card-title">IT TAKES A SINGLE STEP</h1>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text">Last updated 3 mins ago</p>
+                <p class="card-text">-ISIS NGO, GYWS, IIT KGP</p>
               </div>
             </div>
           </div>
@@ -123,7 +142,7 @@
               <div class="card-img-overlay">
                 <h1 class="card-title">NEVER TOO LATE</h1>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text">Last updated 3 mins ago</p>
+                <p class="card-text">-ISIS NGO, GYWS, IIT KGP</p>
               </div>
             </div>
           </div>
@@ -138,12 +157,48 @@
         </button>
       </div>
       </div>
+  <!-- NAVBAR HERE -->
+      <nav class="navbar sticky-top navbar-expand-md navbar-light ">
+        <div class="container-xxl ">
+            <a href="#intro" class="navbar-brand">
+            <span class="fw-bold text-white">
+            ISIS NGO
+            </span></a>       
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+             <div class="collapse navbar-collapse justify-content-end  col-md-8 text-white" id="navbarTogglerDemo03">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a href="#About" class="nav-link text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-white">Initiatives</a>
+            </li>
+            <li class="nav-item">
+              <a href="impact.html" class="nav-link text-white">Our Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a href="getinvolved.html" class="nav-link text-white">Join Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Contact Us</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+        <div class="button display-6">
+            
+            <button class="btn btn-primary">Donate</button>
+            </div></nav>
     
       <br><br><hr><br>
       <h4><strong>ISIS NGO</strong></h4>
 
-      <!-- <div class="sticky-lg-top col-md-5">Stick to the top on viewports sized MD (medium) or wider</div> -->
-      <div class="container shadow-lg p-5" >
+  <!-- CARD GRID HERE -->
+      <div class="container shadow-lg p-5" id="cas" >
   <div class="row">
     <div class="col">
       <div class="card mb-3 border border-5" style="max-width: 540px;">
@@ -213,7 +268,7 @@
     </div>
   </div>
 
-  <div class="card mb-3 m-5 p-5 display-6" style="max-width:70vw;">
+  <div class="card mb-3 m-5 p-5 display-6" style="max-width:70vw; background-color:rgb(183, 213, 213)">
     <div class="row g-0">
       <div class="col-md-8">
         <img src="maps.png" class="img-fluid rounded-start" style="width:7800px; height:500px;" alt="...">
@@ -247,5 +302,10 @@
 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
   DONATE NOW</button>
 </div></div>
+<!-- LAST BOX HERE -->
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>Thanks for visiting !</p>
+  <p>&#169;Aditya Raj; Akshita Jain; Mahesh Yadav; Manaswi Raj</p>
+</div>
   </body>
 </html>
